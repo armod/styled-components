@@ -5,6 +5,7 @@ import { Button } from '@mui/material'
 // import Card from './components/Card'
 import GlobalStyles from './components/global-styles'
 import { useState } from 'react'
+import Loading from './components/Loading'
 
 const StyledBtn = styled(Button)`
   text-transform: capitalize;
@@ -33,6 +34,7 @@ function App() {
     <ThemeProvider theme={baseTheme === true ? BaseTheme : DarkTheme}>
       <GlobalStyles />
       <Container>
+        <Loading />
         <h1>hello world</h1>
         <button className='btn' onClick={toggleTheme}>
           toggle me
