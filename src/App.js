@@ -1,7 +1,9 @@
-import styled from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 import BasicTitle from './components/BasicTitle'
 import { DefaultButton, HipsterButton } from './components/Buttons'
 import { Button } from '@mui/material'
+// import Card from './components/Card'
+import GlobalStyles from './components/global-styles'
 
 const StyledBtn = styled(Button)`
   text-transform: capitalize;
@@ -9,17 +11,9 @@ const StyledBtn = styled(Button)`
 
 function App() {
   return (
-    <div style={{ padding: '2rem' }}>
-      <Button color='primary' variant='contained'>
-        hello word
-      </Button>
-      <StyledBtn color='primary' variant='contained'>
-        hello word
-      </StyledBtn>
-      {/* <BasicTitle special>styled component</BasicTitle>
-      <BasicTitle>styled component</BasicTitle>
-      <DefaultButton>click me</DefaultButton>
-      <HipsterButton>click me</HipsterButton> */}
+    <div>
+      <GlobalStyles />
+      {/* <Card /> */}
     </div>
   )
 }
