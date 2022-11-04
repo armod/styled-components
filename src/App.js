@@ -1,4 +1,4 @@
-import styled, { ThemeProvider } from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components/macro'
 import BasicTitle from './components/BasicTitle'
 import { DefaultButton, HipsterButton } from './components/Buttons'
 import { Button } from '@mui/material'
